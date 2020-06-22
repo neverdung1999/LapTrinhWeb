@@ -80,7 +80,7 @@ namespace BigSchool.Controllers
         {
             var userId = User.Identity.GetUserId();
             var courses = _dbContext.Courses
-                .Where(c => c.LecturerId == userId && c.DateTime > DateTime.Now)
+                .Where(c => c.LecturerId == userId && c.DateTime > DateTime.Now && c.IsCanceled == false)
                 .Include(l => l.Lecturer)
                 .Include(l => l.Category)
                 .ToList();

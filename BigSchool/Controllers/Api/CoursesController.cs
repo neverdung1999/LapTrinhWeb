@@ -19,7 +19,7 @@ namespace BigSchool.Controllers.Api
         }
 
         [HttpDelete]
-        public IHttpActionResult Cancer(int id)
+        public IHttpActionResult Cancel(int id)
         {
             var userId = User.Identity.GetUserId();
             var course = _dbContext.Courses.Single(c => c.Id == id && c.LecturerId == userId);
@@ -29,7 +29,7 @@ namespace BigSchool.Controllers.Api
             _dbContext.SaveChanges();
 
             return Ok();
-    }
+         }
     }
 
 

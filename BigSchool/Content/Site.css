@@ -23,39 +23,51 @@ textarea {
     max-width: 280px;
 }
 
-.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #4451ff;
+
+.navbar-inverse {
+    background-color: red;
+    border-color: white;
 }
 
+    .navbar-inverse .navbar-brand {
+        color: #999999;
+    }
 
-.course{
-    list-style:none;
-}
+        .navbar-inverse .navbar-brand:hover,
+        .navbar-inverse .navbar-brand:focus {
+            color: #ffffff;
+            background-color: transparent;
+        }
 
-.course > li{
-    position:relative;
-    margin-bottom:30px;
-}
-.course > li .date{
-    text-align:center;
-    background-color: pink;
-    color: white;
-    width:60px;
-    border-radius:8px;
+.course {
+    list-style: none;
 }
 
-.course > li .details{
-    position:absolute;
-    top:0;
-    left:70px;
-}
+    .course > li {
+        position: relative;
+        margin-bottom: 30px;
+    }
 
-.course > li .action{
-    display:none;
-    left:70px;
-    position:absolute;
-}
+        .course > li .date {
+            text-align: center;
+            background-color: red;
+            color: white;
+            width: 60px;
+            border-radius: 8px;
+        }
 
-.course > li:hover .action{
-    display:block;
-}
+        .course > li .details {
+            position: absolute;
+            top: 0;
+            left: 70px;
+        }
+
+        .course > li .action {
+            display: none;
+            left: 70px;
+            position: absolute;
+        }
+
+        .course > li:hover .action {
+            display: block;
+        }
